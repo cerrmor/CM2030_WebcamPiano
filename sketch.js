@@ -1,3 +1,6 @@
+//canvas variable
+var c;
+
 var video;
 var prevImg;
 var diffImg;
@@ -16,7 +19,8 @@ function preload()
 }
 
 function setup() {
-    createCanvas(640*2, 480);
+    c = createCanvas(640*2, 480);
+    c.parent('canvas');
     pixelDensity(1);
     noStroke();
 

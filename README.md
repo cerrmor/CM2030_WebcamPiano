@@ -13,4 +13,4 @@ The other projects were:
   CM2030_averageFace
   CM2030_InstagramFilter
 
-This project utilizes JavaScript and the p5.js library to implement a series of image filters and generate a computer vision effect.
+This project utilizes JavaScript and the p5.js library to implement computer vision.
