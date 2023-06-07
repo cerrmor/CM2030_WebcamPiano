@@ -24,6 +24,26 @@ body {
     height:50%; */
     transform:scale(0.95);
 }
+#buttonContainer{
+    position:relative;
+    top:530px;
+    left:40px;
+}
+#myButton {
+    position:absolute;
+    /* top:60px;
+    left: -250px; */
+    width:150px;
+    padding:20px;
+    border-radius: 15px;
+    /* height:50px; */
+}
+#myButton:hover {
+    background-color: greenyellow;
+}
+#myButton:active{
+    background-color: darkgreen;
+}
 #controls {
     display:flex;
     flex-direction: row;
