@@ -14,9 +14,20 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style> -->
   </head>
   <body>
-    <div id="canvas"></div>
+    <div class="container">
+      <div id="canvas">
+        <span id="controls">
+          <span id="threshold"></span>
+          <span id="value"></span>
+        </span>
+      </div>
+      <div id="instructContainer">
+        <h1 id="title">Instructions</h1>
+        <p id="instructions"><strong>slider</strong> ➡ controls the light threshold limit <br/><br/> 
+        If the application registers too much motion try adjusting the threshold slider. Smaller threshold values are often better</p>
+      </div>
+    </div>
   </body>
 </html>

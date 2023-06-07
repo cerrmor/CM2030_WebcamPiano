@@ -1,5 +1,6 @@
 //canvas variable
 var c;
+var threshText;
 
 var video;
 var prevImg;
@@ -25,7 +26,11 @@ function setup() {
     noStroke();
 
     thresholdSlider = createSlider(0, 255, 50);
-    thresholdSlider.position(20, 20);
+    thresholdSlider.parent("threshold");
+    // thresholdSlider.position(20, 20);
+    // console.log(threshold)
+    threshText = createP(threshold);
+    threshText.parent("value");
     console.log(video);
     grid = new Grid(640,480);
 }
@@ -84,7 +89,8 @@ function draw() {
 
     noFill();
     stroke(255);
-    text(threshold, 160, 35);
+    threshText.html(threshold);
+    // text(threshold, 160, 35);
 
     prevImg = createImage(currImg.width, currImg.height);
     prevImg.copy(currImg, 0, 0, currImg.width, currImg.height, 0, 0, currImg.width, currImg.height);
